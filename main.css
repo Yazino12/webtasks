@@ -1,0 +1,16 @@
+body{
+	background-color: white;
+
+}
+
+table{
+	background-color: #f3f3f3;
+	padding: 10px;
+	width: 80%;
+	margin: auto;
+	border: 2px;
+}
+
+table td ul p{
+	text-align: left;
+}
