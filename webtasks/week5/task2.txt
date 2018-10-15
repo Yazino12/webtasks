@@ -1,0 +1,30 @@
+import java.sql.Date;
+
+public class Main {
+
+    public static void main(String[] args) {
+        double value=365;
+        double value2=value;
+        long t1=System.currentTimeMillis();
+        while(true){
+            value=value2;
+            boolean b=true;
+            while(b){
+                long t2=System.currentTimeMillis();
+                if((t2/1000-t1/1000)>=2) {
+                    value2 += Math.random() * (-2) + 1;
+                    if (value2 - value > 2 || value - value2 > 2) {
+                        b = false;
+                    }
+                    t1=System.currentTimeMillis();
+                    //System.out.println(value2);
+                }
+            }
+            if(value2>value && (value2 - value > 2 || value - value2 > 2)) {
+                System.out.println("Was: " + value + "; Now: " + value2 + "; Difference: " + (value2 - value));
+            }if(value2<value && (value2 - value > 2 || value - value2 > 2)){
+                System.out.println("Was: " + value + "; Now: " + value2 + "; Difference: " + (value - value2));
+            }
+        }
+    }
+}

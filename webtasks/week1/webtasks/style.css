@@ -1,0 +1,21 @@
+body{
+	background-color: white;
+
+}
+
+tr td p{
+	padding: 10px;
+}
+
+
+table{
+	background-color: #f3f3f3;
+	width: 80%;
+	margin: auto;
+	border-collapse: collapse;
+	border: 2px;
+}
+
+.main {
+	margin: 15px 0px 0px 0px;
+}
